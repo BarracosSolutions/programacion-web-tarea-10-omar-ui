@@ -8,6 +8,15 @@ import AddReceipt   from './components/AddReceipt/AddReceipt';
 import ReceiptsList from './components/ReceiptsList/ReceiptsList';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    
+    this.state = {
+      receipts: [],
+      articles: []
+    }
+  }
+
   render() {
     return (
       <div className="App">

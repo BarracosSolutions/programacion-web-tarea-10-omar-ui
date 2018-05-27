@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import { Button, Input, Table } from 'reactstrap';
 
 export default class ArticlesList extends Component {
+    constructor(props){
+        super(props);
+        this.state = props.state;
+    }
+
     render() {
       return (
         <div>
