@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import './App.css';
 
 import Header       from './components/Header/Header';
@@ -11,8 +12,12 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
-        <ReceiptsList/>
-        <AddReceipt/>
+        <Container>
+          <Row>
+            <Col xs="4"><ReceiptsList/></Col>
+            <Col xs="8"><AddReceipt/></Col>
+          </Row>  
+        </Container>
         <Footer/>
       </div>
     );
